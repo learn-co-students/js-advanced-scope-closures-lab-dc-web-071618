@@ -1,5 +1,5 @@
 function produceDrivingRange(blockRange) {
-  return function(block1, block2) {
+  return (block1, block2) => {
     start = block1.slice(0,2)
     finish = block2.slice(0,2)
     let distance = finish - start;
@@ -12,7 +12,7 @@ function produceDrivingRange(blockRange) {
 }
 
 function produceTipCalculator(tipRate) {
-  return function(fare) {
+  return (fare) => {
     return fare * tipRate;
   }
 }
